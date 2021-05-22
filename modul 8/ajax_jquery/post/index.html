@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JQuery</title>
+</head>
+<body>
+	<h1>Latihan JQuery</h1>
+	<p>Kita akan mempelajari penggunaan AJX dalam JQuery</p>
+	<button>ambil data dari server</button>
+
+	<script src="../jquery-3.6.0.min.js"></script>
+	<script>
+
+		$("document").ready(function(){
+			$.post("post.php",
+				{nama:"Loka Dwiartara",alamat:"Bogor"},
+				function(data,status){
+					alert("Data: "+data+"\nStatus:"+status);
+			});
+		});
+
+	</script>
+</body>
+</html>

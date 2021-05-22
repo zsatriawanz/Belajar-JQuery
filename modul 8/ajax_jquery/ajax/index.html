@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JQuery</title>
+</head>
+<body>
+	<form action="POST" id="ajaxTest">
+		<input type="text" name="ajaxinput">
+		<button>Kirim</button>
+	</form>
+		<div id="waiting"></div>
+		<div id="result"></div>
+	
+
+	<script src="../jquery-3.6.0.min.js"></script>
+	<script>
+		$(function(){
+			$('#ajaxTest').submit(function(e){
+				e.preventDefault();
+
+				// sistem ajaxnya
+				$.ajax({
+					url:"ajax.php",
+					type:"POST",
+					dataType:"html",
+					data:$(this).serialize(),
+					beforeSend:function(){
+						$('#waiting').text('Mohon Tunggu Sebentar').fadeIn('slow');
+					},
+					success:function(html){
+						$('#waiting').fadeOut('slow');
+						$('#result').text(html).fadeIn('slow').fadeOut('slow').fadeIn('slow');
+					}
+				})
+			})
+		})
+
+	</script>
+</body>
+</html>
