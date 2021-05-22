@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Val</title>
+</head>
+<body>
+	<h1>Form Input</h1>
+	<label for="nama">Nama Mahasiswa</label>
+	<input type="text" name="nama" class="nama" value="Tes Nilai" id="nama"><br/>
+	<button>Ambil Nilai</button>
+
+
+
+	<script src="../jquery-3.6.0.min.js"></script>
+	<script>
+		$(function(){
+			$('button').click(function(){
+				alert($('input.nama').val())
+			})
+		})
+	</script>
+</body>
+</html>

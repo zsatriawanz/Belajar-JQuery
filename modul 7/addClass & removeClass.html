@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JQuery</title>
+	<style>
+		.red{
+			background: red;
+			color:#fff;
+		}
+
+		p{
+			padding: 20px;
+		}
+	</style>
+</head>
+<body>
+	<p>Ini adalah paragraf p</p>
+	<button class="add">Tambah class</button>
+	<button class="remove">Hpaus class</button>
+	<script src="../jquery-3.6.0.min.js"></script>
+	<script>
+		$(function(){
+			$('.add').click(function(){
+				$('p').addClass('red');
+			})
+			$('.remove').click(function(){
+				$('p').removeClass('red')
+			})
+		})
+	</script>
+</body>
+</html>

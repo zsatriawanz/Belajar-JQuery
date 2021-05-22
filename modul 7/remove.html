@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JQury</title>
+	<style>
+		div{
+			float:left;
+			padding:10px;
+			width:200px;
+			height:auto;
+			margin:0 20px 0 0;
+			background:#eee;
+		}
+
+		h3{
+			margin:0;
+		}
+
+
+		h3:hover{
+			cursor:pointer;
+		}
+
+		p{
+			margin:0;
+		}
+	</style>
+
+</head>
+<body>
+	<div>
+		<h3>Satu</h3>
+		<p>Satu dikenal dengan suatu yang istimewa, nomor satu, itu ibaratnya tidak terkalahkan</p>
+		<br />
+		<button>Hapus</button></div>
+		<div>
+			<h3>Dua</h3>
+			<p>Dua merupakan Angka yang lumrah ditemukan
+			pada anggota tubuh, dua tangan</p>
+			<br />
+			<button>Hapus</button>
+		</div>
+		<div>
+			<h3>Tiga</h3>
+			<p>Ada sebuah desa bernama salatiga, yang dimana
+			penduduknya menyenangi akan dunia web development</p>
+			<br	/>
+			<button>Hapus</button>
+		</div>
+		<div>
+			<h3>Empat</h3>
+			<p>Empat, dan angka lainnya itu sama-sama
+			bagusnya</p>
+			<br />
+			<button>Hapus</button>
+		</div>
+<script src="../jquery-3.6.0.min.js"></script>
+<script>
+	$(function(){
+		$('button').click(function(){
+			$(this).parents('div').remove()
+		})
+	})
+</script>
+
+</body>
+</html>

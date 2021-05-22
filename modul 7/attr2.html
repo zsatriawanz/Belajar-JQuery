@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>attr</title>
+	<style>
+		img{
+			height:200px;
+			width:200px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Mengganti Gambar Menggunakan Fungsi attr</h1>
+	<button>Ganti Gambar</button>
+	<br/>
+	<img src="../img/perahu2.jpg" class="gambar1" alt="perahu2.jpg">
+	<img src="../img/LOGO.png" class="gambar2" alt="LOGO.png">
+
+	<script src="../jquery-3.6.0.min.js"></script>
+	<script>
+		$(function(){
+			$('button').click(function(){
+				var ambilsourcegambar = $('img.gambar2').attr('src');
+				$('.gambar1').attr('src',ambilsourcegambar);
+			})
+		})
+	</script>
+</body>
+</html>

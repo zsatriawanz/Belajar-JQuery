@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Manipulation Text</title>
+	<style>
+		div{
+			width:200px;
+			float:left;
+			margin: 0 20px 0 0;
+			height: 200px;
+		}
+
+		.hijau{
+			background: green;
+		}
+
+		.merah{
+			background: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="hijau">
+		<h1>Judul Artikel</h1>
+		<p>pada suatu hari</p>
+	</div>
+	<div class="merah">
+		
+	</div>
+
+	<div>
+		<p class='pk'>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Hic, sequi.</p>
+	</div>
+	<script src="../jquery-3.6.0.min.js"></script>
+	<script>
+		$(function(){
+
+			// var digunakan untuk mendefinisakan suatu variabel data, yang bisa diisi dengan suatu nilai, dalama hal ini adalah isinya diambil dari text yang berada di dalam div hijau
+			var ambiltextdaridivhijau = $('div.hijau').text();
+			$('div.merah').html(ambiltextdaridivhijau);
+
+			$('.pk').text(ambiltextdaridivhijau);
+		})
+	</script>
+</body>
+</html>

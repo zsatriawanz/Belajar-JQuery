@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JQuery</title>
+
+</head>
+<body>
+	<h1>Heading Tes </h1>
+	<label for="">Isikan apa saja</label>
+	<input type="text" name="inputkan" class="inputkan"><br/>
+	<button class="before">Before</button>
+	<button class="after">After</button>
+	
+	<div class="wadah"></div>
+
+	<script src="../jquery-3.6.0.min.js"></script>
+	<script>
+		$(function(){
+			$('.before').click(function(){
+				$('.wadah').before('<p>'+$('input.inputkan').val()+'</p>')
+			})
+			$('.after').click(function(){
+				$('.wadah').after('<p>'+$('input.inputkan').val()+'</p>')
+			})
+		})
+	</script>
+</body>
+</html>
