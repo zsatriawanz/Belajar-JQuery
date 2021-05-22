@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>m 01</title>
+</head>
+<script src="../jquery-3.6.0.min.js"></script>
+<body>
+	<h1>Belajar JQuery</h1>
+	<em>Oleh : Satriawan</em>
+	<p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Rem, excepturi! Doloribus esse, neque illum ratione consequuntur deleniti error exercitationem minus dolorum perspiciatis consequatur blanditiis molestiae unde optio eos rem repudiandae ab officia vero reprehenderit, enim quia. Deserunt, aliquid? Exercitationem iusto, voluptatem non? Exercitationem consequatur quas maiores voluptatum provident cupiditate vero.</p>
+	<label for="username">Username</label>
+	<input type="text" id="username">
+	<label for="password">Password</label>
+	<input type="password" id="password">
+
+<!-- jqury -->
+<script>
+
+	<!-- tes jqury -->
+	$(function(){
+		$('input').focus(function(){
+			$(this).css('background-color','lightblue');
+		})
+
+		$('input').blur(function(){
+			$(this).css('background-color','white');
+		})
+	})
+
+</script>
+<!-- end jqury -->
+</body>
+</html>
