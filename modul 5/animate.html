@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Animate</title>
+</head>
+<body>
+	<h1>Animate</h1>
+	<button>Mulai animate</button>
+	<p>Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Officiis rerum fugiat adipisci magni aut eaque, dolor voluptate ducimus, eligendi, commodi consequuntur veritatis totam quos nam reprehenderit sit repellat impedit dolores est voluptates eius? Architecto magni nisi dolorum, error optio vero, incidunt accusamus perspiciatis nobis, placeat repellendus dolore, ad? Quasi doloremque id asperiores ducimus dolorum sapiente officiis alias tempora nemo assumenda reprehenderit quis magni a, hic ab nulla! Ab eos vero quam sapiente tempore sit ut soluta reiciendis voluptas? Vero perferendis sint non quo magnam nostrum consequuntur asperiores explicabo iure omnis voluptatibus deleniti blanditiis hic, libero eveniet cupiditate nemo temporibus repellat?</p>
+	<div style="background:#FF6161;height:100px;width:100px;position:absolute;"></div>
+
+	<script src="../jquery-3.6.0.min.js"></script>
+	<script>
+		$(function(){
+			$("button").click(function(){
+				$('div').animate({
+					height:'toggle'
+				});
+			});
+		});
+	</script>
+</body>
+</html>
