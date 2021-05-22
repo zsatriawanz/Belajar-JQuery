@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>coba</title>
+	<style>
+		.ancestors{
+			display: block;
+			border:2px solid lightgray;
+			color:lightgray;
+			padding:5px;
+			margin:15px;
+		}
+	</style>
+</head>
+<body>
+	<div class="ancestors">
+		<div style="width:500px">
+			div(great/granparent/ buyut -> moyang)
+			<ul>
+				ul(grandparent / parent -> kakek)
+				<li>li(direct parent/parent ->orang tua langsung)
+					<span>span</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div style="width:500px">div(grandparent / kakek)
+		<p>p(direct parent/parent -> orang tua langsung)
+			<span>span</span>
+		</p>
+	</div>
+
+	<script src="../jquery-3.6.0.min.js"></script>
+	<script>
+		$(function(){
+			$('span').parent().css({'color':'red','border':'2px solid black'});
+		});
+	</script>
+</body>
+</html>
